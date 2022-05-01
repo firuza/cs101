@@ -1,4 +1,5 @@
 #include<iostream>
+#include<math.h>
 
 /*
 While decoding take an encoded input for a single number separated by #
