@@ -1,4 +1,4 @@
-#include<simplecpp>
+#include<iostream>
 
 /*
 While decoding take an encoded input for a single number separated by #
@@ -6,7 +6,7 @@ Then convert the char variable to the equivalent integer by subtracting with the
 ascii value of '0', and then add the obtained integer to the ascii value of 'A' -1 to
 get the ascii value of the decoded letter
 */
-main_program {
+int main(){
                     char encoder;
     cin>>encoder;   // Input whether to encode or decode
     if (encoder == 'd') {
