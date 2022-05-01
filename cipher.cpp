@@ -36,7 +36,7 @@ main_program {
                 }
                 enc = asci + 64;  // Add actual integer value to 64 to get encoded letter
                 cout << enc; 
-                x = 0;  // Clear x and y to input the next number
+                x = 0  // Clear x and y to input the next number
                 y = 0;
                 continue;
             }
