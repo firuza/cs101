@@ -63,7 +63,8 @@ int main(){
             if (letter == '$') break;
             int dec = letter - 64;
             cout << dec << "#"; 
-        }
+          
+ }
         cout<<endl;
     }
 }
