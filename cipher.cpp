@@ -7,7 +7,7 @@ ascii value of '0', and then add the obtained integer to the ascii value of 'A' 
 get the ascii value of the decoded letter
 */
 main_program {
-    char encoder;
+                    char encoder;
     cin>>encoder;   // Input whether to encode or decode
     if (encoder == 'd') {
         char x = 0,y = 0; // Input between 2 #'s can be 2 digits, 
