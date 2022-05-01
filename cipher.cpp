@@ -45,6 +45,10 @@ main_program {
             {
                 x = c;
             }
+            if (x == 0)  // If most significant number not read then store current digit in x
+            {
+                x = c;
+            }
             else   // If most significant digit read then store current digit in y
             {
                 y = c;
