@@ -1,6 +1,46 @@
 #include<iostream>
 #include<math.h>
 
+int func(){
+    char encoder;
+    cin>>encoder;   // Input whether to encode or decode
+    if (encoder == 'd') {
+        char x = 0,y = 0; // Input between 2 #'s can be 2 digits, 
+        //so x stores most significant digit and y stores least significant digit
+        // We initialize with 0 as its not the ascii encoding of any of the used characters
+        char c;  // current input character
+        int asci;
+        char enc;
+        while (1) {
+            cin >> c;
+            if (c == '$')
+            {
+                break;
+            }
+            if (c == '#')   
+            {
+                // Convert the encoded number from char to the actual integer value
+                // and store in variable asci
+                if (y == 0)
+                {
+                    asci = x - '0';
+                }
+                else 
+                {
+                    asci = 10* (x - '0') + (y - '0');
+                }
+                enc = asci + 64;  // Add actual integer value to 64 to get encoded letter
+                cout << enc; 
+                x = 0  // Clear x and y to input the next number
+                y = 0;
+                continue;
+            } 
+        }
+  
+  
+}
+
+
 /*
 While decoding take an encoded input for a single number separated by #
 Then convert the char variable to the equivalent integer by subtracting with the 
