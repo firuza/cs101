@@ -70,8 +70,7 @@ int main(){
             cin>>letter;  // input letter one by one for encoding purpose and print corresponding digit on screen until $ encountered
             if (letter == '$') break;
             int dec = letter - 64;
-            cout << dec << "#"; 
-          
+            cout << dec << "#";    
  }
         cout<<endl;
     }
