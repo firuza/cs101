@@ -40,7 +40,6 @@ int func(){
     }}
 }
 
-
 /*
 While decoding take an encoded input for a single number separated by #
 Then convert the char variable to the equivalent integer by subtracting with the 
