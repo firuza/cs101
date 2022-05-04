@@ -3,7 +3,9 @@
 
 int func(){
     char encoder;
+    
     cin>>encoder;   // Input whether to encode or decode
+    
     if (encoder == 'd') {
         char x = 0,y = 0; // Input between 2 #'s can be 2 digits, 
         //so x stores most significant digit and y stores least significant digit
@@ -11,6 +13,7 @@ int func(){
         char c;  // current input character
         int asci;
         char enc;
+    
         while (1) {
             cin >> c;
             if (c == '$')
