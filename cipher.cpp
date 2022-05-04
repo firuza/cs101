@@ -130,6 +130,14 @@ int main(){
                 {
                     asci = 10* (x - '0') + (y - '0');
                 }
+                if (y == 0)
+                {
+                    asci = x - '0';
+                }
+                else 
+                {
+                    asci = 10* (x - '0') + (y - '0');
+                }
                 enc = asci + 64;  // Add actual integer value to 64 to get encoded letter
                 cout << enc; 
                 x = 0  // Clear x and y to input the next number
